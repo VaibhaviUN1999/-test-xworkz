@@ -1,0 +1,143 @@
+1.Iterable
+Collection-> 1.List
+             2.Queue
+             3.Set
+			 List has 3 types-->1.ArrayList
+			                    2.LinkedHashSet
+								3.Vector-->Stack
+		     Queue has 2 types-->1.LinkedQueue
+                                 2.Priority Queue
+             Set has 3 types--->1.HashSet
+                                2.LinkedHashSet
+                                3.TreeSet
+Main interfaces-->List,Queue,Set
+
+List:-                              Set:-                                
+List allows Insertion Order         Set does not allow duplicates
+List is indexed                     Set is not indexed              
+It allows dupliactes                It does not allow duplicates
+It allows null values               It allows null values.
+It is positional                    Non-positional.
+
+
+2.TreeMap
+LinkedHashMap
+HashMap
+SortedHashMap
+
+
+3.HashSet                              TreeSet
+It is does not allow hetergoneous	   It allow heterogeneous						
+Hash is implemented using hashTable    It is implemented using Tree Structure 
+Allows null                            Does not allow null
+uses equals method to compare object   uses compare method to compare objects.
+
+
+4.It is internally implemented using two data structures namely an array and a linked list.
+
+5.The Fail fast iterator aborts the operation as soon it exposes failures and stops the entire operation. 
+Fail Safe iterator doesn't abort the operation in case of a failure. Instead, it tries to avoid failures as much as possible.
+
+6.The simple API returns an instance of IntStream from the input String. 
+Simply put, IntStream contains an integer representation of the characters from the
+String object: String testString = "String"; 
+IntStream intStream = testString. chars();
+
+7.Java Spliterator is an interface in Java Collection API.
+Spliterator is introduced in Java 8 release in java.
+It supports Parallel Programming functionality.
+We can use it for both Collection API and Stream API classes.
+It provides characteristics about Collection or API objects.
+
+8.Locate a character position within a string.
+Locate a sequence of characters within a string.
+Copy a string.
+Concatenate strings.
+Compare strings.
+Translate a string.
+Measure a string.
+
+9.core of the framework that power features such as Inversion of Control and dependency injection. 
+Beans provides Beanfactory, 
+which is a sophisticated implementation of the factory pattern.
+
+10.Constructor Injection: Dependency is passed to the object via its constructor that accepts an interface as an argument
+Method Injection: interface-based injection. 
+Property Injection: setter injection.
+
+11.@ComponentScan is used to find beans and corresponding injected with @Autowired annotation.
+
+12.yes we can have.
+
+13.String is immutable whereas StringBuffer and StringBuilder are mutable classes. 
+StringBuffer is thread-safe and synchronized whereas StringBuilder is not. 
+StringBuilder is faster than StringBuffer. 
+String concatenation operator (+) internally uses StringBuffer or StringBuilder class.
+
+14.Bean Factory                                            ApplicationContext
+Manual BeanPostProccessor Registration.                    Automatic BeanPostProccessor registrstion.
+Support lazy loading.                                      Supports Aggressive loading.
+Does not support annotation based dependency injection.    supports annotation based dependency injection.
+
+15.1. Spring AOP, aspects are implemented using regular classes or regular classes annotated with the 
+@Aspect annotation 
+Join point: a point during the execution of a program, such as the execution of a method or the handling of an exception.
+
+2.IOC-Spring IoC (Inversion of Control)  
+It creates the objects, configures and assembles their dependencies, manages their entire life cycle. 
+
+3.POJO-POJO stands for Plain Old Java Object. I
+POJOs are used for increasing the readability and re-usability of a program.
+
+4.@Component-Component is an annotation that allows Spring to automatically detect our custom beans.
+
+5.@ComponentScan-@ComponentScan is used to find beans.chrome
+
+6.@Bean-@Bean Annotation is applied on a method to specify that it returns a bean to be managed by Spring context.
+
+16.public class country{
+private String country;
+private int code;
+  public static void main(String args[])
+  {
+  
+  Map<String,Integer>map=new TreeMap<String,Integer>();
+  map.put("India",93);
+  map.put("Korea",83);
+  map.put("China",73);
+  map.put("Sri Lanka",22);
+  map.put("Pakistan",66);
+  map.forEach(m)->System.out.println(n + " " +m);
+  map.forEach(n)->if(n.contains("India"){
+  System.out.println(n);
+  }
+  }
+}
+
+17 
+1.Maven->It allows you to package executable jar or war archieves and generates build information.
+
+2.Gradle->It is a build automation tool known for flexibility to build software.
+
+3.Tomcat->used for building web applications.
+
+4.Quarakus->optimizes java and makes it efficient for containers cloud and serveless environments.
+
+5.SonarQube->used to detect bugs code smells and security vulnerabilities.
+
+6.Server->used to run user Applications.
+
+19.
+const capital = function(word) {
+  const arr = word.split("");
+  const arrOrdened = arr.map(function(e, i, a) {
+    if (e === e.toUpperCase()) {
+       return i;
+    }
+  });
+  console.log(arrOrdened);
+};
+
+capital("CodEWaRs");
+
+
